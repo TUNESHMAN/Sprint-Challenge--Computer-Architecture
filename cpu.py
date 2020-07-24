@@ -51,7 +51,7 @@ class CPU:
             with open(filename, "r") as f:
                 for line in f:
                     comment_split = line.split("#")
-
+                    # strip helps to eliminate the leading and trailing characters before returning a copy of the string
                     num = comment_split[0].strip()
 
                     if num == '':
