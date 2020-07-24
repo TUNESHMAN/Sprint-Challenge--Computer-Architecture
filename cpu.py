@@ -29,6 +29,7 @@ class CPU:
         self.reg[7] = 0xF4
         self.flag = 0
         self.inc_size = 1
+        # A branch table helps us keep our operations in a dictionary in key,value pairs
         self.branchtable = {}
         self.branchtable[LDI] = self.handle_LDI
         self.branchtable[PRN] = self.handle_PRN
